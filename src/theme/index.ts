@@ -1,3 +1,14 @@
+/**
+ * Theme file for the application with all the colors, fonts, etc.
+ *
+ * Ideally would be broken down into smaller files for each section
+ * as a full size application requires a lot of themeing.
+ * Also would incorporate a theme provider to allow for
+ * dynamic themeing i.e. dark / light mode.
+ *
+ * https://emotion.sh/docs/theming
+ */
+
 const Theme = {
   colors: {
     green: '#67DB7C',

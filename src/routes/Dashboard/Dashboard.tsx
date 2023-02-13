@@ -1,4 +1,4 @@
-import { SecurityClaimedAgedCard } from '@/components/SecurityClaimedAgedCard/SecurityClaimedAgedCard'
+import { SecurityClaimedAgedCard } from '@/routes/Dashboard/SecurityClaimedAgedCard/SecurityClaimedAgedCard'
 
 export const Dashboard = () => {
   return (
