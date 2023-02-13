@@ -10,12 +10,18 @@ const baseStyles = {
   transition: 'all 0.2s ease-in-out',
 }
 
-const styles = (isPrimary: boolean) =>
-  css({
+const styles = {
+  primaryStyles: css({
+    backgroundColor: Theme.colors.primaryColor,
+    color: Theme.colors.highlightColor,
     ...baseStyles,
-    backgroundColor: isPrimary ? Theme.colors.primaryColor : Theme.colors.white,
-    color: isPrimary ? Theme.colors.highlightColor : Theme.colors.primaryColor,
-    border: isPrimary ? 'none' : `1px solid ${Theme.colors.primaryColor}`,
-  })
+  }),
+  secondaryStyles: css({
+    backgroundColor: Theme.colors.white,
+    color: Theme.colors.primaryColor,
+    border: `1px solid ${Theme.colors.primaryColor}`,
+    ...baseStyles,
+  }),
+}
 
 export default styles

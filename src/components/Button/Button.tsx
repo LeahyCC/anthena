@@ -1,5 +1,4 @@
 import styles from './Button.styles'
-import classNames from 'classnames'
 
 type ButtonProps = {
   text: string | number
@@ -9,7 +8,10 @@ type ButtonProps = {
 
 export const Button = ({ onClick, text, isPrimary = true }: ButtonProps) => {
   return (
-    <button onClick={onClick} css={styles(isPrimary)}>
+    <button
+      onClick={onClick}
+      css={[isPrimary ? styles.primaryStyles : styles.secondaryStyles]}
+    >
       {text}
     </button>
   )
