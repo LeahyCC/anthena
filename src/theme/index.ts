@@ -4,6 +4,11 @@ const Theme = {
     blueLight: '#437CF8',
     blueDark: '#090CBD',
     white: '#FFFFFF',
+    primaryColor: '#1B1D3D',
+    secondaryColor: '#323456',
+    valueColor: '#707070',
+    softColor: '#7C7C7C',
+    highlightColor: '#45EEE9',
   },
   fonts: {
     family: 'Poppins',
@@ -19,13 +24,6 @@ const Theme = {
       xLarge: '18px',
       xxLarge: '20px',
     },
-  },
-  text: {
-    primaryColor: '#1B1D3D',
-    secondaryColor: '#323456',
-    valueColor: '#707070',
-    softColor: '#7C7C7C',
-    highlightColor: '#45EEE9',
   },
   boxShadow: {
     primary: '0px 4px 4px rgba(0, 0, 0, 0.25);',

@@ -6,7 +6,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     width: '100%',
-    minWidth: '420px',
+    maxWidth: '420px',
     backgroundColor: Theme.colors.white,
   }),
   header: css({
@@ -14,7 +14,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Theme.colors.green,
-    color: Theme.text.primaryColor,
+    color: Theme.colors.primaryColor,
     padding: '4px 0',
     fontWeight: Theme.fonts.weight.extraBold,
     boxShadow: Theme.boxShadow.primary,
@@ -26,7 +26,7 @@ const styles = {
   }),
   contentHeader: css({
     textAlign: 'center',
-    color: Theme.text.primaryColor,
+    color: Theme.colors.primaryColor,
     fontSize: Theme.fonts.size.xxLarge,
     fontWeight: Theme.fonts.weight.extraBold,
     textShadow: Theme.boxShadow.primary,
@@ -35,8 +35,21 @@ const styles = {
   contentSubHeader: css({
     textAlign: 'center',
     fontSize: Theme.fonts.size.xLarge,
-    color: Theme.text.secondaryColor,
+    color: Theme.colors.secondaryColor,
     marginBottom: '8px',
+  }),
+  buttonWrapper: css({
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '16px',
+
+    '> button': {
+      width: '100%',
+    },
+
+    '> button:not(:last-of-type)': {
+      marginRight: '8px',
+    },
   }),
 }
 

@@ -3,9 +3,7 @@ import { SecurityClaimedAgedCard } from '@/components/SecurityClaimedAgedCard/Se
 export const Dashboard = () => {
   return (
     <div>
-      <div>
-        <SecurityClaimedAgedCard />
-      </div>
+      <SecurityClaimedAgedCard />
     </div>
   )
 }

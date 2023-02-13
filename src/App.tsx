@@ -1,4 +1,4 @@
-import { Link, Route } from 'wouter'
+import { Route } from 'wouter'
 
 import * as style from './app.styles'
 
@@ -7,7 +7,7 @@ import { Dashboard } from '@/routes/Dashboard'
 
 function App() {
   return (
-    <div className={style.App}>
+    <div css={style.App}>
       <Route path="/" component={Dashboard} />
     </div>
   )

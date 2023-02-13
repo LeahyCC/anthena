@@ -1,8 +1,11 @@
-import { css } from '@emotion/css'
+import { css } from '@emotion/react'
+import Theme from '@/theme'
 
-export const App = css`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-`
+export const App = css({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  fontSize: Theme.fonts.size.medium,
+  color: Theme.colors.primaryColor,
+  fontFamily: Theme.fonts.family,
+})
